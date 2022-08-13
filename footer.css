@@ -1,0 +1,27 @@
+.footer{
+    padding: 78px 0 25px 0 ;
+}
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row-footer__title{
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.row-footer__tags{
+    display: flex;
+    column-gap: 20px;
+}
+@media (max-width: 680.98px) {
+    .row-footer{
+        flex-direction: column;
+        align-items: baseline;
+        row-gap: 15px;
+    }
+    .footer{
+        padding: 50px 0 15px 0;
+    }
+}

@@ -1,0 +1,52 @@
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    min-height: 104px;
+    gap: 130px;
+}
+.header__logo{
+    font-family: Montserrat,serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+.menu__list{
+    display: flex;
+    column-gap: 21px;
+    flex: 1 1 auto;
+}
+.menu__item{
+    color: inherit;
+}
+/*Tablet*/
+@media (max-width: 991.98px) {
+    .menu_list{
+        column-gap: 38px;
+    }
+    .header_container{
+        min-height: 75px;
+        gap: 70px;
+    }
+}
+/*Mobile*/
+@media (max-width: 767.98px) {
+    .header_container{
+        gap: 35px;
+    }
+   .menu__item{
+       font-size: 20px;
+   }
+   .menu__list{
+       flex-wrap: wrap;
+       padding-top: 5px;
+   }
+}

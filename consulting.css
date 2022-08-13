@@ -1,0 +1,138 @@
+.consulting{
+    position: relative;
+}
+.consulting:before{
+    content: "";
+    position: absolute;
+    background-color: #252B42;
+    height: 272px;
+    width: 100%;
+    bottom: 0;
+    top: 146px;
+    left: 0;
+    z-index: -1;
+}
+.consulting__head{
+    padding: 40px 0 90px 0
+}
+.head-consulting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-consulting__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+.head-consulting__text{
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.head-consulting__button{
+    display: inline-block;
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background: #FF7B47;
+    border-radius: 5px;
+    transition: background-color 0.6s ease;
+}
+.head-consulting__button:hover{
+    background-color: #c17b60;
+}
+.consulting__body{
+    display: flex;
+    justify-content: space-between;
+}
+.item-consulting{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.item-consulting__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+.consulting__menu{
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.item-consulting__block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.block-consulting{
+    display: flex;
+    column-gap: 10px;
+}
+.block-consulting__icon{
+    min-height: 30px;
+    min-width: 24px;
+}
+.block-consulting__text{
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+/*Tablet*/
+@media (max-width: 991.98px) {
+    .consulting__body{
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+    .consulting__colum{
+        flex: 0 1 30%;
+    }
+    .consulting:before{
+        height: 465px;
+    }
+}
+@media (max-width: 680.98px) {
+    .head-consulting {
+        align-items: start;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .consulting:before{
+        height: 660px;
+        top: 200px;
+    }
+    .consulting__colum{
+        flex: 0 1 45%;
+    }
+}
+@media (max-width: 505.98px) {
+    .consulting__body{
+        flex-direction: column;
+    }
+    .consulting__colum{
+        flex: 1 1 auto;
+    }
+    @media (max-width: 680.98px) {
+        .consulting:before {
+            height: 1062px;
+            top: 200px;
+        }
+    }
+}
